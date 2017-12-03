@@ -35,6 +35,10 @@ def submitForm():
     session["confirm"] = request.form["confirm"]
     print session["confirm"]
 
+
+
+      
+
     if len(session["first"]) < 1 or len(session["last"]) < 1 or len(session["email"]) < 1 or len(session["password"]) < 1 or len(session["confirm"]) < 1:
         flash("INPUT ALL FIELDS DUMMY")
         
@@ -57,10 +61,6 @@ def submitForm():
 
     if session["password"] != session["confirm"]:
         flash("PASSWORDS DID NOT MATCH")
-        session["error"] = 1
-
-    # if session[""]
-        
         session["error"] = 1
 
     
