@@ -6,3 +6,6 @@ h1{
     background: linear-gradient(seagreen, rgb(189, 107, 107));
     padding: 20px;
 }
+.error{
+    color: red;
+}
